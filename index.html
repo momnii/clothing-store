@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bee Gee</title>
+<link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body>
+<header id="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/b.png" width="125px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#Kleidung">Produkte</a></li>
+                    <li><a href="#Kontakte">Kontakt</a></li>
+                </ul>
+            </nav>
+            <img id="cart-button" src="img/shopping-bag.png" width="30px" height="30px" alt="Open Cart">
+        </div>
+
+    </div>
+
+<div class="row">
+    <div class="column-2">
+        <h1>Entdecke deinen Style <br> mit Bee Gee!</h1> <br>
+        <p>Bee Gee präsentiert eine exquisite Auswahl an einzigartiger Damenmode aus Frankreich und Italien zu unschlagbaren Preisen. Entdecken Sie bei uns Ihren individuellen Stil, ganz gleich, ob jung oder alt. Verleihen Sie Ihrem Look eine persönliche Note und genießen Sie den Komfort unserer Kollektion. Bee Gee steht für Mode, die nicht nur ansprechend aussieht, sondern auch Ihren persönlichen Stil unterstreicht. Tauchen Sie ein in die Welt von Bee Gee, wo Mode nicht nur Kleidung ist, sondern ein Ausdruck Ihrer Persönlichkeit. Erleben Sie den Charme und die Eleganz unserer Kollektion – Bee Gee, wo Mode zum Erlebnis wird!</p>
+        <a href="#Kategorien" class="btn">Shop now &#8594;</a>
+    </div>
+
+    <div class="column-2">
+        <img src="img/hpbild.jpg">
+    </div>
+</div>
+    <br>
+    <br>
+</header>
+
+<!-- Kategorien -->
+<div id="Kategorien"></div>
+<div class="categories">
+    <div class="small-container">
+        <h2 class="title">Das bieten wir Ihnen an</h2>
+        <div class="row">
+            <div class="column-3">
+                <h4>Kleidung</h4>
+                <a href="#Kleidung">
+                <img src="img/zweiteiler.jpg">
+            </a>
+            </div>
+            <div class="column-3"> 
+                <h4>Schmuck</h4>
+                <a href="#Schmuck">
+                <img src="img/Gold Bracelet Aesthetic.jpg">
+            </a>
+            </div>
+            <div class="column-3"> 
+                <h4>Taschen</h4>
+                <a href="#Taschen">
+                <img src="img/baggy.jpg">
+            </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Produkte -->
+<div id="Kleidung"></div>
+<div class="small-container">
+    <h2 class="title">Produkte</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="img/o1.jpg" alt="Product 1">
+            <h4>weiße Bluse</h4>
+            <p>10$</p>
+             <label for="size1">Größe:</label>
+                <select id="size" name="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+            <label for="size1">Menge:</label>
+                <input type="number" id="quantity1" value="1" min="1">
+                <button onclick="addToCart('weiße Bluse', 10, 'img/o1.jpg','quantity1','size')">im Warenkorb hinzufügen </button>
+        </div>
+
+        <div class="col-4">
+            <img src="img/O4T.jpeg" alt="Product 2">
+            <h4>beiger Mantel</h4>
+            <p>15$</p>
+            <label for="size2">Größe:</label>
+                <select id="size2" name="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <label for="quantity2">Menge:</label>
+                <input type="number" id="quantity2" value="1" min="1">
+                <button onclick="addToCart('beiger Mantel', 15, 'img/O4T.jpeg', 'quantity2','size2')">im Warenkorb hinzufügen </button>
+        </div>
+        
+        <div class="col-4">
+            <img src="img/o3(1).jpg" alt="Product 3">
+            <h4>schwarzes Kleid</h4>
+            <p>20$</p>
+            <label for="size3">Größe:</label>
+                <select id="size3" name="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <label for="quantity3">Menge:</label>
+                <input type="number" id="quantity3" value="1" min="1">
+                <button onclick="addToCart('schwarzes Kleid', 20, 'img/o3(1).jpg','quantity3','size3')">im Warenkorb hinzufügen</button>
+            </div>
+
+        <div class="col-4">
+            <img src="img/OT.jpeg" alt="Product 4">
+            <h4>weißer Seidenrock</h4>
+            <p>25$</p>
+            <label for="size4">Größe:</label>
+                <select id="size4" name="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <label for="quantity4">Menge:</label>
+                <input type="number" id="quantity4" value="1" min="1">
+                <button onclick="addToCart('weißer Seidenrock', 25, 'img/OT.jpeg','quantity4', 'size4')">im Warenkorb hinzufügen</button>
+            </div>
+
+            <div id="Schmuck"></div>
+            <div class="col-4">
+                <img src="img/S1.jpg" alt="Product 5">
+                <h4>goldene Ohrringe</h4>
+                <p>10$</p>
+                <label for="quantity5">Menge:</label>
+                <input type="number" id="quantity5" value="1" min="1">
+                 <button onclick="addToCart('Ohrringe', 10, 'img/S1.jpg','quantity5')">im Warenkorb hinzufügen</button>
+             </div>
+            
+            <div class="col-4">
+                <img src="img/S2.jpg" alt="Product 6">
+                <h4>Kette</h4>
+                <p>15 $</p>
+                <label for="quantity6">Menge:</label>
+                <input type="number" id="quantity6" value="1" min="1">
+                 <button onclick="addToCart('Kette', 15, 'img/S2.jpg','quantity6')">im Warenkorb hinzufügen</button>
+             </div>
+
+            <div class="col-4">
+                <img src="img/S3.jpg" alt="Product 7">
+                <h4>goldene Armbänder</h4>
+                <p>7 $</p>
+                <label for="quantity7">Menge:</label>
+                <input type="number" id="quantity7" value="1" min="1">
+                <button onclick="addToCart('Kette', 7, 'img/S3.jpg', 'quantity7')">im Warenkorb hinzufügen</button>
+            </div>
+
+            <div class="col-4">
+                <img src="img/S4.jpg" alt="Product 8">
+                <h4>goldene Haardeko</h4>
+                <p>8 $</p>
+                <label for="quantity8">Menge:</label>
+                <input type="number" id="quantity8" value="1" min="1">
+                <button onclick="addToCart('Haardeko', 8, 'img/S4.jpg', 'quantity8')">im Warenkorb hinzufügen</button>
+            </div>
+
+            <div id="Taschen"></div>
+            <div class="col-4">
+                <img src="img/T1.jpg" alt="Product 9">
+                <h4>weiße Tasche</h4>
+                <p>12 $</p>
+                <label for="quantity9">Menge:</label>
+                <input type="number" id="quantity9" value="1" min="1">
+                <button onclick="addToCart('weiße Tasche', 12, 'img/T1.jpg','quantity9')">im Warenkorb hinzufügen</button>
+            </div>
+
+            <div class="col-4">
+                <img src="img/T2.jpg" alt="Product 10">
+                <h4>grüne Tasche</h4>
+                <p>17 $</p>
+                <label for="quantity10">Menge:</label>
+                <input type="number" id="quantity10" value="1" min="1">
+                <button onclick="addToCart('grüne Tasche', 17, 'img/T2.jpg','quantity10')">im Warenkorb hinzufügen</button>
+            </div>
+
+            <div class="col-4">
+                <img src="img/T3.jpg" alt="Product 11">
+                <h4>Mustertasche</h4>
+                <p>70 $</p>
+                <label for="quantity11">Menge:</label>
+                <input type="number" id="quantity11" value="1" min="1">
+                <button onclick="addToCart('Mustertasche', 70, 'img/T3.jpg','quantity11')">im Warenkorb hinzufügen</button>
+            </div>
+
+            <div class="col-4">
+                <img src="img/T4.jpg" alt="Product 12">
+                <h4>braune Handtasche</h4>
+                <p>25 $</p>
+                <label for="quantity12">Menge:</label>
+                <input type="number" id="quantity12" value="1" min="1">
+                <button onclick="addToCart('braune Handtasche', 25, 'img/T4.jpg','quantity12')">im Warenkorb hinzufügen</button>
+        </div>
+    </div>
+</div>
+
+<div id="notification" class="notification"></div>
+
+
+<div class="offer">
+    <div class="small-container">
+      <div class="row">
+        <div class="column-2">
+          <img src="img/silver.jpg" class="offer-img">
+        </div>
+        <div class="column-2">
+            <p>Tauchen Sie ein in den ultimativen Luxus!</p>
+            <h1>Diamantenschuhe</h1>
+            <small>Jedes Paar ist ein meisterhaftes Kunstwerk, mit funkelnden Diamanten besetzt. 
+            Egal ob auf dem roten Teppich oder bei besonderen Anlässen – mit Diamantenschuhen setzen Sie ein unvergleichliches Statement des Stils und der Eleganz. 
+            Gönnen Sie sich den Luxus, der jeden Schritt zu einem unvergesslichen Erlebnis macht. </small>
+            <br>
+            <button id="offerbtn" onclick="addToCart('silberne Diamantenschuhe', 1000, 'img/silver.jpg','quantity13','size5')"> Warenkorb &#8594;</button>
+            
+            <select id="size5" name="size">
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+            </select>
+            <input type="number" id="quantity13" value="1" min="1" style="border: none; background-color: transparent;">
+            
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div  id="cart-section" class="right-side-slide-container" >
+
+    <h4 class="title">Warenkorb</h4>
+    <table id="cart-table">
+        <thead>
+            <tr>
+                <th>Produkt</th>
+                <th>Größe</th>
+                <th>Menge</th>
+                <th>Preis</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="cart-body">
+            <!-- Hier werden die Produkte im Warenkorb dynamisch eingefügt -->
+        </tbody>
+    </table>
+
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Gesamtsumme</td>
+                <td id="totalPrice">0$</td>
+            </tr>
+        </table>
+    </div>
+    <div class="cart-btn">
+        <button id="close-button">Close</button>
+        <button id="Kasse" onclick="myFunction();">Kasse</button>
+    </div>
+    <div id="myDIV">
+        Danke für ihren Einkauf <3
+        </div>
+</div>
+ 
+<section class= "newsletter" > 
+    
+    <div class="newstext">
+        <h1>Möchtest du über die neusten Trends informiert werden?</h1>
+        <p>Dann abonniere jetzt unseren Newsletter.</p>
+        <p id="ausgabe"></p>
+    </div>
+
+    <div class="form">
+        <br>
+        <p>Bitte gib deine E-Mail Adresse ein.</p>
+        <input type="text" placeholder="Mail" id="email" value="">
+        <button onclick="newsletter();">Abschicken</button> 
+    </div>
+
+ </section>
+
+ <section class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+            <img src="img/logo-coca-cola.png">
+            </div>
+            <div class="col-5">
+            <img src="img/logo-godrej.png">
+            </div>
+            <div class="col-5">
+            <img src="img/logo-oppo.png">
+            </div>
+            <div class="col-5">
+            <img src="img/logo-paypal.png">
+            </div>
+            <div class="col-5">
+            <img src="img/logo-philips.png">
+            </div>
+        </div>
+    </div>
+ </section>
+
+
+ <footer>
+    <div class="container">
+        <div class="row">
+        <div class="footer-col-1">
+            <h3>Download App</h3>
+            <p>Download App for Android and ios mobile phone.</p>
+            <div class="app-logo">
+                <img src="img/app-store.png" alt="app-store">
+                <img src="img/play-store.png" alt="play-store">
+            </div>
+         </div>
+         <div class="footer-col-2">
+            <a href="#header">
+            <img src="img/b.png">
+        </a>
+            <p>Finde deinen Style!</p>
+         </div>
+         <div class="footer-col-3">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#Kleidung">Produkte</a></li>
+                <li><a href="#Kontakte">Kontakt</a></li>
+                <li><a href="#cart-section"></a></li>
+            </ul>
+         </div>
+         <div class="footer-col-4" id="Kontakte">
+            <h3>Kontaktiere uns</h3>
+            <ul>
+                <li>E-mail: beegee@gmail.com</li>
+                <li>Telefon: +123456789 </li>
+                <li>Instagram: beegee</li>
+                <li>TikTok: beegeestyle</li>
+            </ul>
+         </div>
+
+      </div>  
+    </div>
+</footer>
+
+    <script src="js/script.js"></script>
+</body>

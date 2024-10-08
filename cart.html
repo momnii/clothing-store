@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bee Gee</title>
+<link rel="stylesheet" href="css/style.css"> 
+
+</head>
+
+<body>
+    <div id="cart">
+        <!-- Hier werden die Produkte im Warenkorb angezeigt -->
+      </div>
+<header>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/b.png" width="125px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+
+            <a href="cart.html">
+                <img src="img/shopping-bag.png" width="30px" height="30px" onclick="showCart();">
+            </a>            
+                <img src="img/love.png" width="30px" height="30px">
+            
+        </div>
+    </div>
+</header>
+
+<div class="small-container cart-page">
+    <h4 class="title">Warenkorb</h4>
+    <table id="cart-table">
+        <thead>
+            <tr>
+                <th>Produkt</th>
+                <th>Größe</th>
+                <th>Menge</th>
+                <th>Preis</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="cart-body">
+            <!-- Hier werden die Produkte im Warenkorb dynamisch eingefügt -->
+        </tbody>
+    </table>
+
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Gesamtsumme</td>
+                <td id="totalPrice">0$</td>
+            </tr>
+        </table>
+    </div>
+</div>
+  
+<script src="js/script.js" defer></script>
+</body>
+</html>
