@@ -27,9 +27,7 @@ choose quantities, and add items to their shopping cart. Our elegant design feat
 
 - **Frontend**: HTML, CSS, JavaScript
 
-## 📷 Image Credits
 
-- Images sourced from [ASOS](https://www.asos.com).
 
 
 
